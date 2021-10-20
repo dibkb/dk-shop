@@ -4,7 +4,7 @@ export const products = [
     title: "iPhone 11",
     brand: "Apple",
     image:
-      "https://images.unsplash.com/photo-1603891128711-11b4b03bb138?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80",
+      "https://images.unsplash.com/photo-1591337676887-a217a6970a8a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1480&q=80",
     price: 60000,
     countInStock: 4,
     rating: 4.3,
@@ -16,9 +16,9 @@ export const products = [
     id: 2,
     title: "iPhone 12",
     brand: "Apple",
-    image: "https://images.unsplash.com/photo-1611740677496-3e0ef378e189?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=440&q=80",
+    image: "https://images.unsplash.com/photo-1612100577176-b976eff1d10c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1390&q=80",
     price: 78000,
-    countInStock: 9,
+    countInStock: 0,
     rating: 4.7,
     numReviews: 1232,
     description:

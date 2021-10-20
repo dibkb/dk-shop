@@ -37,9 +37,12 @@ $muted-color: #B7B7B7;
 .stars{
    display: flex;
    align-items: center;
+   .reviews{
+     align-self: flex-end;
+   }
 }
 .num-reviews{
    color: $muted-color;
    font-size: 12px;
-   padding-top: 6px;
+   align-self: center;
 }

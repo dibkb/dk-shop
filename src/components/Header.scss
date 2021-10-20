@@ -16,10 +16,14 @@ $font-header: "Shadows Into Light", cursive;
 }
 .left-side {
   cursor: pointer;
+  display: flex;
   span {
     margin-left: 0.3rem;
     font-family: inherit;
   }
+}
+.brand{
+  font-size: 48px;
 }
 .icons {
   display: flex;
@@ -34,5 +38,6 @@ $font-header: "Shadows Into Light", cursive;
 }
 
 .icons > * {
+  font-size: 21px;
   margin-right: 0.3rem;
 }

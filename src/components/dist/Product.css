@@ -1,0 +1,49 @@
+.item-container {
+  padding: 1rem 1rem;
+  background-color: #232323;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 8px 36px rgba(0, 0, 0, 0.6);
+}
+.item-container:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.item-container .background-image {
+  width: 100%;
+  height: 250px;
+}
+.item-container .title,
+.item-container .reviews,
+.item-container .stars,
+.item-container .price {
+  margin-top: 0.3rem;
+  align-self: flex-start;
+  color: #fff;
+  font-size: 16px;
+  background: transparent;
+}
+.item-container .price {
+  font-size: 24px;
+}
+
+.stars > * {
+  background-color: transparent;
+  margin-right: 3px;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+}
+.stars .reviews {
+  align-self: flex-end;
+}
+
+.num-reviews {
+  color: #B7B7B7;
+  font-size: 12px;
+  align-self: center;
+}

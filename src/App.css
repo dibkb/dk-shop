@@ -15,7 +15,7 @@
   color: var(--color-primary);
   font-family: var(--font);
   font-weight: 400;
-  font-size: 32px;
+  /* font-size: 32px; */
   transition: 0.3s all;
 }
 
