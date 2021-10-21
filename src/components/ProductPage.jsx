@@ -5,7 +5,6 @@ import { products } from "./products";
 import Reviews from "./Reviews";
 const ProductPage = (props) => {
   const {
-    id,
     title,
     brand,
     image,
@@ -26,7 +25,6 @@ const ProductPage = (props) => {
   return (
     <div className="product-page-container">
       <div className="img-container" style={bgImage}></div>
-
       <div className="product-info">
         <UnderLine>
           <div className="basic-info">
