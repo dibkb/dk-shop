@@ -8,7 +8,7 @@ const Header = () => {
   let iconStyles = { background: "transparent", fontSize: "4rem" };
   return (
     <div className="header-container">
-      <Link className="left-side" to = '/'>
+      <Link className="left-side" to = '/items'>
         <GiCrownedSkull style = {iconStyles}/>
         <span className = 'brand'>DK</span>
       </Link>
@@ -17,10 +17,10 @@ const Header = () => {
           <AiOutlineShoppingCart />
           <span>Cart</span>
         </Link>
-        <Link className="icons" to = '/login'>
+        {/* <Link className="icons" to = '/login'>
           <BiUserCircle />
           <span>User</span>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
