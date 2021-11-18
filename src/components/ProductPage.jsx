@@ -1,9 +1,12 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import UnderLine from "../ui/UnderLine";
 import "./ProductPage.scss";
 import { products } from "./products";
 import Reviews from "./Reviews";
+import { ADD_TO_CART } from "./store/reducers/cartReducer";
 const ProductPage = (props) => {
+  const dispatch = useDispatch();
   const {
     title,
     brand,
@@ -51,8 +54,17 @@ const ProductPage = (props) => {
           </span>
         </div>
         <div className="buy-btn-ctn">
-           <button type = 'button' disabled = {true}> Add to Cart</button>
-          
+          <button
+            type="button"
+            onClick={() =>
+              dispatch({
+                type: ADD_TO_CART,
+                payload: props.match.params.id,
+              })
+            }
+          >
+            Add to Cart
+          </button>
         </div>
       </div>
     </div>
