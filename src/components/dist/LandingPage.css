@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
 .landing-container {
   display: flex;
   flex-direction: column;
@@ -8,7 +8,7 @@
   background: transparent;
 }
 .landing-container h1 {
-  font-family: "Rock Salt", sans-serif;
+  font-family: "Gruppo", cursive;
   font-size: 45px;
   color: #fff;
   text-align: center;
