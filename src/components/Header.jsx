@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import "./Header.scss";
 import { GiCrownedSkull } from "react-icons/gi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import { BiUserCircle } from "react-icons/bi";
+// import { BiUserCircle } from "react-icons/bi";
 const Header = () => {
   let iconStyles = { background: "transparent", fontSize: "4rem" };
   return (

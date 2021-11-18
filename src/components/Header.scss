@@ -3,6 +3,7 @@ $gold-color: #dec79d;
 $font-header: "Shadows Into Light", cursive;
 // $border-dark: rgba($gold-color, 0.88);
 .header-container {
+  padding: 0 2.1rem;
   font-family: $font-header;
   display: flex;
   justify-content: space-between;

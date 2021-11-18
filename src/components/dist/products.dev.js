@@ -85,7 +85,7 @@ var products = [{
   numReviews: 219,
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae placerat arcu, nec finibus odio. Aenean fermentum sagittis iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
 }, {
-  id: 4,
+  id: 9,
   title: "Air Pods Pro",
   brand: "Apple",
   image: "https://images.unsplash.com/photo-1606841837239-c5a1a4a07af7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YWlycG9kcyUyMHByb3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
@@ -95,7 +95,7 @@ var products = [{
   numReviews: 33,
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae placerat arcu, nec finibus odio. Aenean fermentum sagittis iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
 }, {
-  id: 4,
+  id: 10,
   title: "Air Pods Max",
   brand: "Apple",
   image: "https://images.unsplash.com/photo-1613040809024-b4ef7ba99bc3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YWlycG9kcyUyMG1heHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
@@ -105,7 +105,7 @@ var products = [{
   numReviews: 3,
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae placerat arcu, nec finibus odio. Aenean fermentum sagittis iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
 }, {
-  id: 5,
+  id: 11,
   title: "Boeing 777",
   brand: "Boeing Commercial Airplanes",
   image: "https://images.unsplash.com/photo-1571306603861-20c055ab2e5c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=435&q=80",
@@ -115,7 +115,7 @@ var products = [{
   numReviews: 3,
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae placerat arcu, nec finibus odio. Aenean fermentum sagittis iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
 }, {
-  id: 5,
+  id: 12,
   title: "Air Pods",
   brand: "Apple",
   image: "https://images.unsplash.com/photo-1610438235354-a6ae5528385c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWlycG9kc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
@@ -123,6 +123,16 @@ var products = [{
   countInStock: 12,
   rating: 4.1,
   numReviews: 622,
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae placerat arcu, nec finibus odio. Aenean fermentum sagittis iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+}, {
+  id: 13,
+  title: "Falcon heavy",
+  brand: "SpaceX",
+  image: "https://images.unsplash.com/photo-1517976487492-5750f3195933?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
+  price: 420420420,
+  countInStock: 12,
+  rating: 4.8,
+  numReviews: 6969,
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae placerat arcu, nec finibus odio. Aenean fermentum sagittis iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
 }];
 exports.products = products;

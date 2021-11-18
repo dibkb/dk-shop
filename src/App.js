@@ -8,12 +8,12 @@ import Cart from "./components/Cart";
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route exact path="/" component={LandingPage} />
-        <div className="container">
+      {/* <div className="container"> */}
+        <Switch>
+          <Route exact path="/" component={LandingPage} />
           <Route component={Header} />
-        </div>
-      </Switch>
+        </Switch>
+      {/* </div> */}
 
       <div className="container">
         <Route path="/items" component={ProductContainer} />

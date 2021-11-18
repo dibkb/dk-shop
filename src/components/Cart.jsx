@@ -12,7 +12,7 @@ const Cart = () => {
   const totalPrice = useSelector((state) => state.total);
   // console.log(addedItems.length);
   const handleToken = (token,addresses) => {
-    console.log(token,addresses)
+    // console.log(token,addresses)
   };
   return (
     <div className="cart-container">
