@@ -2,7 +2,11 @@ import React, { useEffect } from "react";
 import { IoIosAdd, IoIosRemove } from "react-icons/io";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { INCREASE_ITEM, DECREASE_ITEM,DELETE_ITEM } from "./store/reducers/cartReducer";
+import {
+  INCREASE_ITEM,
+  DECREASE_ITEM,
+  DELETE_ITEM,
+} from "./store/reducers/cartReducer";
 import { MdClear } from "react-icons/md";
 import "./Cart.scss";
 
@@ -48,16 +52,15 @@ const CartItem = ({ id, image, title, price, brand }) => {
     });
   };
 
-  const itemDeleteHandler = (e) =>{
+  const itemDeleteHandler = (e) => {
     e.preventDefault();
     dispatch({
       type: DELETE_ITEM,
       payload: id,
-    })
-
-  }
+    });
+  };
   return (
-    <div key={id} className="cartitem-container">
+    <div className="cartitem-container">
       <Link
         className="background-image"
         to={`/product/${id}`}
@@ -69,7 +72,7 @@ const CartItem = ({ id, image, title, price, brand }) => {
         <button onClick={decreaseItem}>
           <IoIosRemove style={iconStyles} />
         </button>
-        <input type="number" value={cartItem.quantity}></input>
+        <input type="number" value={cartItem.quantity} onChange = {(e) =>e.target.value}></input>
         <button onClick={increaseItem}>
           <IoIosAdd style={iconStyles} />
         </button>
@@ -77,7 +80,7 @@ const CartItem = ({ id, image, title, price, brand }) => {
       <span className="item-price">
         ₹{parseInt(cartItem.price) * parseInt(cartItem.quantity)}
       </span>
-      <button className="deleteBtn" onClick = {itemDeleteHandler}>
+      <button className="deleteBtn" onClick={itemDeleteHandler}>
         <MdClear style={deleteStyle} />
       </button>
     </div>

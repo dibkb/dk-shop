@@ -17,12 +17,12 @@ const Cart = () => {
   return (
     <div className="cart-container">
       {addedItems.map((item) => (
-        <CartItem {...item} />
+        <CartItem {...item} key = {item.id}/>
       ))}
       {addedItems.length !== 0 && (
         <div className="checkout-section">
           <span className="price">Total Price : ₹{totalPrice}</span>
-          <button className="checkout-btn">
+          <div className="checkout-btn">
             <StripeCheckout
               stripeKey="pk_test_51H5WJcEuvU3Yjs7wpQUQyR7zO42ONE2pMfSZQnxwDQnXAlPb5RdcQsK9jo8oXPmTuMURjwtb8914DGDHMGgfzWCp00mPbjNm9e"
               token={handleToken}
@@ -31,7 +31,7 @@ const Cart = () => {
               amount = {totalPrice*100}
               currency="INR"
             />
-          </button>
+          </div>
         </div>
       )}
     </div>
