@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+import { BsSearch } from "react-icons/bs";
+
 import { products } from "./products";
 // import { useDispatch,  } from "react-redux";
 import Product from "./Product";
@@ -26,13 +28,34 @@ const ProductContainer = () => {
 
   //   return unsubscribe;
   // }, [dispatch]);
+  let iconStyles = { background: "transparent", fontSize: "1.3rem" };
+
+  const [search, setSearch] = useState("");
+  const filteredProducts = products.filter((product) =>
+    product.title.toLocaleLowerCase().includes(search.toLocaleLowerCase())
+  );
+  // console.log(search, filteredProducts);
   return (
-    <div className="product-container">
-      {products.map((item) => {
-        // console.log(item.title)
-        return <Product key={item.id} {...item}></Product>;
-      })}
-    </div>
+    <>
+      <div className="searchBoxContainer">
+        <BsSearch style={iconStyles} className="search-icon" />
+
+        <input
+          className="search-box"
+          type="text"
+          placeholder="Search item here"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+      </div>
+
+      <div className="product-container">
+        {filteredProducts.map((item) => {
+          // console.log(item.title)
+          return <Product key={item.id} {...item}></Product>;
+        })}
+      </div>
+    </>
   );
 };
 

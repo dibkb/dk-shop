@@ -1,3 +1,26 @@
+.searchBoxContainer {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  background-color: #383838;
+  padding: 0.69rem 1.8rem;
+  border-radius: 12px;
+}
+
+.search-box {
+  background-color: transparent;
+  padding: 0 1.8rem;
+  outline: none;
+  border: none;
+  display: flex;
+  align-self: center;
+  font-size: 1.125rem;
+  color: #fff;
+}
+.search-box::placeholder {
+  font-size: 1.125rem;
+}
+
 .product-page-container {
   margin: 1rem 0;
   display: grid;
@@ -76,7 +99,7 @@
   cursor: pointer;
 }
 .buy-btn-ctn button:hover {
-  padding: 0.8rem 3rem;
+  transform: scale(1.12);
 }
 
 @media (max-width: 767.98px) {
